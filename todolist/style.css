@@ -1,0 +1,59 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(./images/background.jpg) no-repeat 0 0 / cover;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.container {
+  min-height: 100vh;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.user-input {
+
+}
+.user-input .button-plus::before {
+  content: '+';
+  display: inline;
+}
+
+.task-list {
+  margin: 20px 0 0;
+  border: 1px solid lightgray;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  padding: 20px 0 4px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid lightgray;
+}
+.tabs::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 100px;
+  height: 4px;
+  background: pink;
+}
+.tabs li {
+  width: 100px;
+  text-align: center;
+}
+
+.tasks .task {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 16px;
+}

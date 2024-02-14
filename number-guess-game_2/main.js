@@ -12,6 +12,7 @@ let count;
 const initGame = function(){
   goal_num = Math.floor(Math.random()*100)+1; // Math.floor(Math.random()*100) -> 0~99
   count = 5;
+  counter.textContent = count;
   notice.textContent = '';
   input.value = '';
   input.focus();

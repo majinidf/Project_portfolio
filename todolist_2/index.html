@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO-LIST</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TODO LIST</h1>
+    <section class="user-input">
+      <input type="text" class="input-text">
+      <button type="button" class="button-plus"><span class="visually-hidden">할일추가</span></button>
+    </section>
+    
+    <section class="task-list">
+      <ul class="tabs">
+        <li><button type="button" data-mode="all">모두</button></li>
+        <li><button type="button" data-mode="doing">진행중</button></li>
+        <li><button type="button" data-mode="done">끝남</button></li>
+      </ul>
+
+      <p class="no-data">리스트가 없습니다.</p>
+      <ul class="tasks"></ul>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
+
+<!-- 
+수
+할일 앱 만들기
+3. 할일 앱 3탄: 객체의 활용
+4.할일 앱 4탄: 아이템 삭제하기
+4탄 까지 결과물 제출
+https://airtable.com/appy6UHUoWs8mLLYA/shrmkn38C2i1qPrBT
+목
+할일 앱 만들기
+5. 할일 앱 5탄: 아이템 필터링 하기
+미션 까지 완성한 최종 결과물 제출
+https://airtable.com/appy6UHUoWs8mLLYA/shrIsaBqyv6X9u3YN -->

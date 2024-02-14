@@ -34,7 +34,7 @@ const filterList = function(e){
 }
 
 for(let i = 0; i < tabs.length ; i++){
-  tabs[i].addEventListener('click', (e) => { console.log(e);
+  tabs[i].addEventListener('click', (e) => { 
     tab_wrap.style.setProperty('--underline-left', `${e.target.offsetLeft}px`);
     filterList(e);
   });

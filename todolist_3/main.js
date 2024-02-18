@@ -11,26 +11,24 @@ let filteredList = [];
 let mode = 'all';
 
 const filterList = function(e){
-  mode = e.target.dataset.mode;
+  mode = e === undefined ? mode : e.target.dataset.mode;
   filteredList = [];
 
-  if(mode === "all"){
-    renderTask();
-  } else if(mode === "doing"){
+  if(mode === "doing"){
     for(let i = 0; i < taskList.length ; i++){
       if(taskList[i].isComplete == false){
         filteredList.push(taskList[i]);
       }
     }
-    renderTask();
   } else if(mode === "done"){
     for(let i = 0; i < taskList.length ; i++){
       if(taskList[i].isComplete == true){
         filteredList.push(taskList[i]);
       }
     }
-    renderTask();
   }
+
+  renderTask();
 }
 
 for(let i = 0; i < tabs.length ; i++){
@@ -52,7 +50,12 @@ const toggleComplete = function(id){
       break;
     }
   }
-  renderTask();
+  
+  if( mode !== 'all' ){
+    filterList();
+  } else {
+    renderTask();
+  }
 }
 
 const removeItem = function(id){
